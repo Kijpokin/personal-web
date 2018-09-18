@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import './App.css'
 import styled, { keyframes } from 'styled-components'
 import LandingPage from './components/landingPage'
+import { BrowserRouter as Router, Switch } from 'react-router-dom'
 
 export const styles = {
   fontSize: 180,
@@ -138,7 +139,7 @@ const BoxTitle = styled.div`
   width: ${props => (props.width ? props.width : (5 / 6) * styles.fontSize)}px;
 `
 
-const TextAnimationFadeIn = keyframes`
+export const TextAnimationFadeIn = keyframes`
   from {
     opacity: 0
     transform: translate3d(0, 0, 0);
@@ -217,7 +218,9 @@ class App extends Component {
     titleK: false,
     titleI: false,
     titleE: false,
-    subTitle: false
+    subTitle: false,
+
+    isStart: false
   }
 
   constructor() {
@@ -301,29 +304,46 @@ class App extends Component {
       )
     }
 
-    return (
-      // <MainLayout>
-      //   <MainWrapper>
-      //     <Box>
-      //       <PositionBox>
-      //         <BoxTitle
-      //           width={animateTitle ? (isMobile ? 260 : 590) : undefined}
-      //           isMobile={isMobile}
-      //         >
-      //           <span>M</span>
-      //           {titleA && <TextFade>a</TextFade>}
-      //           {titleC && <TextFade>c</TextFade>}
-      //           {titleK && <TextFade>k</TextFade>}
-      //           {titleI && <TextFade>i</TextFade>}
-      //           {titleE && <TextFade>e</TextFade>}
-      //         </BoxTitle>
-      //       </PositionBox>
-      //       {subTitle && <BoxNext>Click to Continue</BoxNext>}
-      //     </Box>
-      //   </MainWrapper>
-      // </MainLayout>
-      <LandingPage />
+    const welcomeLayout = (
+      <MainLayout>
+        <MainWrapper>
+          <Box>
+            <PositionBox>
+              <BoxTitle
+                width={animateTitle ? (isMobile ? 260 : 590) : undefined}
+                isMobile={isMobile}
+              >
+                <span>M</span>
+                {titleA && <TextFade>a</TextFade>}
+                {titleC && <TextFade>c</TextFade>}
+                {titleK && <TextFade>k</TextFade>}
+                {titleI && <TextFade>i</TextFade>}
+                {titleE && <TextFade>e</TextFade>}
+              </BoxTitle>
+            </PositionBox>
+            {subTitle && (
+              <BoxNext onClick={() => this.setState({ isStart: true })}>
+                Click to Continue
+              </BoxNext>
+            )}
+          </Box>
+        </MainWrapper>
+      </MainLayout>
     )
+
+    const detailsLayout = (
+      <Router>
+        <Switch>
+          <LandingPage />
+        </Switch>
+      </Router>
+    )
+
+    if (!this.state.isStart) {
+      return <React.Fragment>{welcomeLayout}</React.Fragment>
+    }
+
+    return <React.Fragment>{detailsLayout}</React.Fragment>
   }
 }
 

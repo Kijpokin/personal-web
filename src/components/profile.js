@@ -4,22 +4,41 @@ import styled from 'styled-components'
 import Phone from '../assets/outline-phone-24px.svg'
 import Cake from '../assets/outline-cake-24px.svg'
 import Mail from '../assets/outline-mail-24px.svg'
+import { keyframes } from 'styled-components'
 
-const ProfileImg = styled.img`
+const ProfileImageWrapper = styled.div`
   border-radius: 50%;
-  width: 155px;
-  height: 155px;
-  object-fit: cover;
+  width: 155px !important;
+  height: 155px !important;
+
+  margin: auto;
+
+  background-image: url(${ProfilePic});
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  flex-shrink: 0;
 `
 
 const ProfileDetails = styled.span`
   margin-left: 25px;
   line-height: 1.75;
+
+  @media (max-width: 768px) {
+    line-height: 1.25;
+    margin-left: 0;
+  }
 `
 
 const ProfileTitle = styled.div`
   font-size: 28px;
   font-weight: 600;
+
+  @media (max-width: 768px) {
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
 `
 
 const ProfileSubTitle = styled.div`
@@ -35,10 +54,33 @@ const ProfileSubDetails = styled.div`
 const ProfileWrapper = styled.div`
   display: flex;
   padding: 0 1.5rem;
+
+  @media (max-width: 768px) {
+    padding: 0 0.5rem;
+    flex-wrap: wrap;
+  }
 `
 
-const Wrapper = styled.div`
+export const TextAnimationFadeIn = keyframes`
+  from {
+    opacity: 0
+    transform: translate3d(0, 15px, 0);
+  }
+
+  to {
+    opacity: 1
+    transform: translate3d(0, 0, 0);
+  }
+`
+
+export const Wrapper = styled.div`
   padding: 1rem 2rem;
+
+  @media (max-width: 768px) {
+    padding: 0.5rem 1rem;
+  }
+
+  animation: ${TextAnimationFadeIn} 0.75s ease-in-out;
 `
 
 // const TagTitle = styled.div`
@@ -60,20 +102,32 @@ const SubDetailsIcon = styled.img`
 
 const ContactDetails = styled.div`
   display: inline-block;
+
   &:not(last-child) {
+    line-height: 1.5;
     margin-right: 30px;
+    width: 100%;
+  }
+
+  @media (max-width: 768px) {
+    margin-right: 0 !important;
   }
 `
 
 const ContactWrapper = styled.div`
   padding: 0 1.5rem;
+
+  @media (max-width: 768px) {
+    padding: 0 0.5rem;
+  }
 `
 
-const Title = styled.h2`
+export const Title = styled.h2`
   margin-top: 40px;
   margin-bottom: 15px;
+  color: black;
 
-  background: linear-gradient(to right, #363636 0%, #bcbcbc 50%);
+  background: linear-gradient(to right, #363636 0%, #bcbcbc 75%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 `
@@ -83,12 +137,25 @@ const SkillsFlexWrap = styled.div`
   flex: 1;
   padding: 0 1.5rem;
   margin: ${props => props.margin};
+
+  @media (max-width: 768px) {
+    padding: 0 0.5rem;
+    flex-wrap: wrap;
+  }
 `
 
 const SkillsWrapper = styled.div`
   width: 50%;
   &:not(:last-child) {
     margin-right: 25px;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    &:not(:last-child) {
+      margin-right: 0;
+      margin-bottom: 25px;
+    }
   }
 `
 
@@ -248,7 +315,7 @@ export const Profile = () => {
     <Wrapper>
       <Title> About me </Title>
       <ProfileWrapper>
-        <ProfileImg src={ProfilePic} />
+        <ProfileImageWrapper />
         <ProfileDetails>
           <ProfileTitle>Kijpokin Ngamsomsakskul </ProfileTitle>
           <ProfileSubTitle> Front-end developer </ProfileSubTitle>
