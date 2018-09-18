@@ -10,12 +10,10 @@ import Experience from './experience'
 import ProjectPage from './project'
 import AcheivementPage from './acheivements'
 import { Route, withRouter } from 'react-router-dom'
-import { TextAnimationFadeIn } from '../App'
 
 export const UnderLineAnimation = keyframes`
   0% {
-    width: 0;
-    
+    width: 0;  
   }
 
   25% {
@@ -88,8 +86,7 @@ const Menu = styled.div`
   }
 
   &.active,
-  &:hover,
-  &:active {
+  &:hover {
     // &:before {
     //   position: absolute;
     //   top: 100%;
@@ -165,6 +162,7 @@ class LandingPage extends React.Component {
             <Sticky>
               <Menu
                 className={this.props.location.pathname === '/' && 'active'}
+                onTouchStart={() => this.handleMenuClick('/')}
                 onClick={() => this.handleMenuClick('/')}
               >
                 <FAICON>
@@ -176,6 +174,7 @@ class LandingPage extends React.Component {
                 className={
                   this.props.location.pathname === '/experience' && 'active'
                 }
+                onTouchStart={() => this.handleMenuClick('/experience')}
                 onClick={() => this.handleMenuClick('/experience')}
               >
                 <FAICON>
@@ -187,6 +186,7 @@ class LandingPage extends React.Component {
                 className={
                   this.props.location.pathname === '/project' && 'active'
                 }
+                onTouchStart={() => this.handleMenuClick('/project')}
                 onClick={() => this.handleMenuClick('/project')}
               >
                 <FAICON>
@@ -198,6 +198,7 @@ class LandingPage extends React.Component {
                 className={
                   this.props.location.pathname === '/achievement' && 'active'
                 }
+                onTouchStart={() => this.handleMenuClick('/achievement')}
                 onClick={() => this.handleMenuClick('/achievement')}
               >
                 <FAICON>
