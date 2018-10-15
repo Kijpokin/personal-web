@@ -5,6 +5,10 @@ import Phone from '../assets/outline-phone-24px.svg'
 import Cake from '../assets/outline-cake-24px.svg'
 import Mail from '../assets/outline-mail-24px.svg'
 import { keyframes } from 'styled-components'
+import AttachFile from '../assets/resume.svg'
+import Bitbucket from '../assets/bitbucket-sign.svg'
+import Facebook from '../assets/facebook.svg'
+import LinkedIn from '../assets/linkedin-logo.svg'
 
 const ProfileImageWrapper = styled.div`
   border-radius: 50%;
@@ -97,7 +101,12 @@ export const Wrapper = styled.div`
 
 const SubDetailsIcon = styled.img`
   vertical-align: text-bottom;
+
+  max-width: 24px;
+  max-height: 24px;
   // margin-right: 5px;
+
+  ${props => (props.cursor ? 'cursor: pointer' : '')};
 `
 
 const ContactDetails = styled.div`
@@ -239,6 +248,20 @@ const TimelineCompanyDetails = styled.div`
   font-weight: normal;
 `
 
+const OptionLinkWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+`
+
+const OptionLinkItem = styled.div`
+  width: 24px;
+  height: 24px;
+  &:not(:last-child) {
+    margin-right: 5px;
+  }
+`
+
 export const Profile = () => {
   const ProgrammingLanguages = [
     'C/C++',
@@ -323,8 +346,45 @@ export const Profile = () => {
             Active on learning, improve to work as fast as possible and also
             hands-on experience in programming.
           </ProfileSubDetails>
+          <OptionLinkWrapper>
+            <OptionLinkItem>
+              <SubDetailsIcon
+                cursor
+                src={AttachFile}
+                onClick={() =>
+                  window.open('http://mackie.in.th/resume/resume.pdf')
+                }
+              />
+            </OptionLinkItem>
+            <OptionLinkItem>
+              <SubDetailsIcon
+                cursor
+                src={Facebook}
+                onClick={() =>
+                  window.open('https://www.facebook.com/mackunz.mac')
+                }
+              />
+            </OptionLinkItem>
+            <OptionLinkItem>
+              <SubDetailsIcon
+                cursor
+                src={LinkedIn}
+                onClick={() =>
+                  window.open('https://www.linkedin.com/in/kijpokin/')
+                }
+              />
+            </OptionLinkItem>
+            <OptionLinkItem>
+              <SubDetailsIcon
+                cursor
+                src={Bitbucket}
+                onClick={() => window.open('https://bitbucket.org/MackieZ/')}
+              />
+            </OptionLinkItem>
+          </OptionLinkWrapper>
         </ProfileDetails>
       </ProfileWrapper>
+
       <Title> Contact </Title>
       <ContactWrapper>
         <ContactDetails>
