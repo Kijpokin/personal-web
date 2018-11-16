@@ -65,7 +65,7 @@ export const Experience = () => {
       company: 'Dek-D Interactive Co.,ltd.',
       date: 'June 2018 - July 2018',
       details: `Develop UI/UX and implement new design on Dek-D's Board and back-end development using GraphQL API.
-      Also work on Dek-D School front-end development using React.`
+      Also work on Dek-D's School front-end development using React.`
     },
     {
       position: 'Microsoft Student Partner (Technical Evangelist)',
@@ -78,10 +78,17 @@ export const Experience = () => {
 
   const projects = [
     {
+      position: 'Histolearn',
+      date: 'June 2018 - October 2018',
+      company: 'UNESCO',
+      details:
+        'Full-Stack Development, A new way to learn history via Augmented Reality(AR) and real-time website classroom, using ReactJs, Firebase, NodeJs '
+    },
+    {
       position: 'Mobile banking',
-      company: 'Confidential',
+      // company: 'Confidential',
       date: 'June 2017 - January 2018',
-      details: `Develop Front-end application implement new design on Ios & Android and maintenance over 1.0 millions users using Ionic3.`
+      details: `Develop Front-end application implement new design on Ios & Android and maintenance over 2.0 millions users using Ionic3.`
     },
     {
       position: 'Computer Engineering MIS',
