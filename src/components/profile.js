@@ -352,7 +352,7 @@ export const Profile = () => {
                 cursor
                 src={AttachFile}
                 onClick={() =>
-                  window.open('http://mackie.in.th/Resume.pdf')
+                  window.open('https://firebasestorage.googleapis.com/v0/b/myportv2.appspot.com/o/Resume.pdf?alt=media&token=9ba1433b-b16c-4721-a35e-633433b7f526')
                 }
               />
             </OptionLinkItem>

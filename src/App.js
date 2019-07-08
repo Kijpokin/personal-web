@@ -332,7 +332,7 @@ class App extends Component {
     )
 
     const detailsLayout = (
-      <Router>
+      <Router basename="/">
         <Switch>
           <LandingPage />
         </Switch>
