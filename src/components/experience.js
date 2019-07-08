@@ -78,11 +78,17 @@ export const Experience = () => {
 
   const projects = [
     {
+      position: 'FillFeels',
+      date: 'January 2019 - May 2019',
+      // company: ''
+      details: `Full-Stack Development, FillFeels Tracking and take care express your feel by color. using React, Firebase`
+    },
+    {
       position: 'Histolearn',
       date: 'June 2018 - October 2018',
       company: 'UNESCO',
       details:
-        'Full-Stack Development, A new way to learn history via Augmented Reality(AR) and real-time website classroom, using ReactJs, Firebase, NodeJs '
+        'Full-Stack Development, A new way to learn history via Augmented Reality(AR) and real-time website classroom. using React, Firebase, NodeJs '
     },
     {
       position: 'Mobile banking',

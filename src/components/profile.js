@@ -352,7 +352,7 @@ export const Profile = () => {
                 cursor
                 src={AttachFile}
                 onClick={() =>
-                  window.open('http://mackie.in.th/resume/resume.pdf')
+                  window.open('http://mackie.in.th/Resume.pdf')
                 }
               />
             </OptionLinkItem>
