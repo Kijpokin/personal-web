@@ -7,4 +7,4 @@ pipelines:
             - yarn install
             - yarn build
             - npm install -g firebase-tools
-            - yarn deploy
+            - firebase deploy --token $FIREBASE_TOKEN
