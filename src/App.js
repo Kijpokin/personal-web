@@ -236,7 +236,7 @@ class App extends Component {
       this.setState({ isMobile: true })
     }
 
-    const loadTime = 3500
+    const loadTime = 1500
 
     setTimeout(() => this.setState({ isLoading: false }), loadTime)
     setTimeout(() => this.setState({ animateTitle: true }), loadTime + 1500)
