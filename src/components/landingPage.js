@@ -42,25 +42,6 @@ const Layout = styled.div`
   flex-direction: column;
 `
 
-// const HeaderTheme = styled.div`
-//   display: inline-block;
-//   height: 25vh;
-//   width: 100%;
-//   background: ${StartColor};
-//   background-image: -webkit-linear-gradient(
-//     top,
-//     ${StartColor} 0%,
-//     ${EndColor} 100%
-//   );
-//   background-image: -o-linear-gradient(top, ${StartColor} 0%, ${EndColor} 100%);
-//   background-image: linear-gradient(
-//     to bottom,
-//     ${StartColor} 0%,
-//     ${EndColor} 100%
-//   );
-//   background-repeat: repeat-x;
-// `
-
 const Content = styled.div`
   width: 100%;
   margin: 0 auto;
@@ -87,16 +68,6 @@ const Menu = styled.div`
 
   &.active,
   &:hover {
-    // &:before {
-    //   position: absolute;
-    //   top: 100%;
-    //   height: 3px;
-    //   content: '';
-    //   width: 100%;
-    //   display: block;
-    //   background: #dfdfdf;
-    // }
-
     &:after {
       position: absolute;
       top: 100%;

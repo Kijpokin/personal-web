@@ -67,12 +67,12 @@ const ProfileWrapper = styled.div`
 
 export const TextAnimationFadeIn = keyframes`
   from {
-    opacity: 0
+    opacity: 0;
     transform: translate3d(0, 15px, 0);
   }
 
   to {
-    opacity: 1
+    opacity: 1;
     transform: translate3d(0, 0, 0);
   }
 `
@@ -86,18 +86,6 @@ export const Wrapper = styled.div`
 
   animation: ${TextAnimationFadeIn} 0.75s ease-in-out;
 `
-
-// const TagTitle = styled.div`
-//   font-size: 28px;
-//   font-weight: 600;
-//   padding: 10px 0;
-//   margin-bottom: 40px;
-
-//   border-bottom: 6px solid #363636;
-//   border-image: linear-gradient(to right, #363636 0%, #f5f5f5 100%) 1;
-
-//   margin: ${props => props.margin};
-// `
 
 const SubDetailsIcon = styled.img`
   vertical-align: text-bottom;
@@ -200,12 +188,6 @@ const SkillsTag = styled.div`
   color: #f5f5f5;
   border-radius: 10px;
 `
-// const LanguageSkillLine = styled.div`
-//   width: 100%;
-//   height: 1px;
-//   background: #efefef;
-//   margin: 25px 0;
-// `
 
 const TimelineWrapper = styled.div``
 
@@ -278,7 +260,6 @@ export const Profile = () => {
     'Jquery',
     'MySQL',
     'MongoDB',
-    'Laravel',
     'Angular 2+',
     'React',
     'Firebase Realtime Database'
@@ -287,9 +268,9 @@ export const Profile = () => {
   const MobileDevelopments = ['Ionic', 'React Native']
 
   const Languages = [
-    'Thai - (Native)',
-    'English - (Intermediate)',
-    'German - (Beginner)'
+    'Thai (Native)',
+    'English (Intermediate)',
+    'German (Beginner)'
   ]
 
   const TimelineData = [
@@ -299,14 +280,9 @@ export const Profile = () => {
       details: 'High school in science and mathematics program'
     },
     {
-      date: '2015-Present',
+      date: '2015-2019',
       company: `King Mongkut's University Of Technology Thonburi`,
       details: 'Bachelor degree of Computer Engineering'
-    },
-    {
-      date: '2016-Present',
-      company: 'Ramkamhaeng University',
-      details: 'Bachelor degree of Business Administration'
     }
   ]
 
@@ -341,10 +317,10 @@ export const Profile = () => {
         <ProfileImageWrapper />
         <ProfileDetails>
           <ProfileTitle>Kijpokin Ngamsomsakskul </ProfileTitle>
-          <ProfileSubTitle> Front-end developer </ProfileSubTitle>
+          <ProfileSubTitle> Full-stack developer </ProfileSubTitle>
           <ProfileSubDetails>
-            Active on learning, improve to work as fast as possible and also
-            hands-on experience in programming.
+            Active on learning, Passionate to create best impactful product for
+            users and also hands- on experience in programming
           </ProfileSubDetails>
           <OptionLinkWrapper>
             <OptionLinkItem>
@@ -352,7 +328,9 @@ export const Profile = () => {
                 cursor
                 src={AttachFile}
                 onClick={() =>
-                  window.open('https://firebasestorage.googleapis.com/v0/b/myportv2.appspot.com/o/Resume.pdf?alt=media&token=9ba1433b-b16c-4721-a35e-633433b7f526')
+                  window.open(
+                    'https://firebasestorage.googleapis.com/v0/b/myportv2.appspot.com/o/Resume.pdf?alt=media&token=9ba1433b-b16c-4721-a35e-633433b7f526'
+                  )
                 }
               />
             </OptionLinkItem>

@@ -30,6 +30,8 @@ const BoxItem = styled.div`
 `
 
 const BoxItemHeader = styled.div`
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 1.5rem;
   font-size: 125%;
   font-weight: 600;
@@ -58,8 +60,33 @@ const ProjectTitle = Title.extend`
   margin-top: 3.5rem;
 `
 
+const Link = styled.a`
+  font-size: 0.75em;
+  cursor: pointer;
+  color: #666;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+`
+
 export const Experience = () => {
   const works = [
+    {
+      position: 'Software Developer',
+      company: 'Empyrean Solutions - APAC',
+      date: 'June 2019 - Now',
+      details:
+        'Front-end development and research new things to apply in teams using React, GraphQL'
+    },
+    {
+      position: 'Full stack Developer Part-time',
+      company: 'Focal Solutions',
+      date: 'January 2019 - May 2019',
+      details:
+        'Develop website with automation testing and CI/CD using React, Docker, Jenkins'
+    },
     {
       position: 'Front-End Developer Intern',
       company: 'Dek-D Interactive Co.,ltd.',
@@ -81,14 +108,16 @@ export const Experience = () => {
       position: 'FillFeels',
       date: 'January 2019 - May 2019',
       // company: ''
-      details: `Full-Stack Development, FillFeels Tracking and take care express your feel by color. using React, Firebase`
+      details: `Full-Stack Development, FillFeels Tracking and take care express your feel by color. using React, Firebase`,
+      link: 'https://fillfeels.com'
     },
     {
       position: 'Histolearn',
       date: 'June 2018 - October 2018',
       company: 'UNESCO',
       details:
-        'Full-Stack Development, A new way to learn history via Augmented Reality(AR) and real-time website classroom. using React, Firebase, NodeJs '
+        'Full-Stack Development, A new way to learn history via Augmented Reality(AR) and real-time website classroom. using React, Firebase, NodeJs ',
+      link: 'https://histolearn-unesco.web.app/'
     },
     {
       position: 'Mobile banking',
@@ -116,7 +145,9 @@ export const Experience = () => {
 
   const getBox = item => (
     <BoxItem>
-      <BoxItemHeader> {item.position} </BoxItemHeader>
+      <BoxItemHeader>
+        {item.position} {item.link && <Link href={item.link}>Link</Link>}
+      </BoxItemHeader>
       <BoxDetails>
         {item.company} <BoxDetailsDate>{item.date}</BoxDetailsDate>
         <BoxSubDetails> {item.details}</BoxSubDetails>
