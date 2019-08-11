@@ -11,6 +11,6 @@ const CopyRight = styled.div`
   margin-bottom: 0.75rem;
 `
 
-export const Footer = () => <CopyRight> © Mackie - 2018</CopyRight>
+export const Footer = () => <CopyRight> © Mackie - 2019</CopyRight>
 
 export default Footer

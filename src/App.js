@@ -1,5 +1,4 @@
-import React, { Component } from 'react'
-import './App.css'
+import React, { useState, useEffect } from 'react'
 import styled, { keyframes } from 'styled-components'
 import LandingPage from './components/landingPage'
 import { BrowserRouter as Router, Switch } from 'react-router-dom'
@@ -208,143 +207,113 @@ const BoxNext = styled.div`
   }
 `
 
-class App extends Component {
-  state = {
-    isLoading: true,
-    isMobile: false,
-    animateTitle: false,
-    titleA: false,
-    titleC: false,
-    titleK: false,
-    titleI: false,
-    titleE: false,
-    subTitle: false,
+const MOBILE_BREAKDOWN_PIXEL = 768
 
-    isStart: false
+const App = () => {
+  const [isLoading, setIsLoading] = useState(true)
+  const [isAnimateTitle, setIsAnimateTitle] = useState(false)
+  const [shouldFadeTitle, setShouldFadeTitle] = useState(false)
+  const [shouldShowSubTitle, setShouldShowSubTitle] = useState(false)
+  const [shouldShowDetails, setShouldShowDetails] = useState(false)
+
+  const isMobile = window.innerWidth <= MOBILE_BREAKDOWN_PIXEL
+
+  if (isMobile) {
+    styles.fontSize = mobileStyles.fontSize
   }
 
-  constructor() {
-    super()
-
-    if (window.innerWidth <= 768) {
-      styles.fontSize = mobileStyles.fontSize
-    }
-  }
-
-  componentDidMount() {
-    if (window.innerWidth <= 768) {
-      this.setState({ isMobile: true })
-    }
-
+  useEffect(() => {
     const loadTime = 1500
 
-    setTimeout(() => this.setState({ isLoading: false }), loadTime)
-    setTimeout(() => this.setState({ animateTitle: true }), loadTime + 1500)
-    setTimeout(() => this.setState({ titleA: true }), loadTime + 2750)
-    setTimeout(() => this.setState({ titleC: true }), loadTime + 2750)
-    setTimeout(() => this.setState({ titleK: true }), loadTime + 2750)
-    setTimeout(() => this.setState({ titleI: true }), loadTime + 2750)
-    setTimeout(() => this.setState({ titleE: true }), loadTime + 2750)
+    setTimeout(() => setIsLoading(false), loadTime)
+    setTimeout(() => setIsAnimateTitle(true), loadTime + 1500)
+    setTimeout(() => setShouldFadeTitle(true), loadTime + 2750)
+    setTimeout(() => setShouldShowSubTitle(true), loadTime + 4250)
+  }, [])
 
-    setTimeout(() => this.setState({ subTitle: true }), loadTime + 4250)
-  }
+  const mainLogoLoading = (
+    <svg height={styles.fontSize} width={styles.fontSize - 25}>
+      <Text2
+        fontFamily="Quicksand, sans-serif"
+        fontSize={styles.fontSize}
+        strokeOpacity="null"
+        strokeWidth="0"
+        textAnchor="start"
+        x="0"
+        y={styles.fontSize}
+        xmlSpace="preserve"
+      >
+        M
+      </Text2>
+      <Text
+        id="svg_3"
+        fill="#000000"
+        fillOpacity="null"
+        fontFamily="Quicksand, sans-serif"
+        fontSize={styles.fontSize}
+        stroke="#000"
+        strokeOpacity="null"
+        strokeWidth="0"
+        textAnchor="start"
+        x="0"
+        y={styles.fontSize}
+        xmlSpace="preserve"
+      >
+        M
+      </Text>
+    </svg>
+  )
 
-  render() {
-    const {
-      isLoading,
-      isMobile,
-      animateTitle,
-      titleA,
-      titleC,
-      titleK,
-      titleI,
-      titleE,
-      subTitle
-    } = this.state
-    const mainLogoLoading = (
-      <svg height={styles.fontSize} width={styles.fontSize - 25}>
-        <Text2
-          fontFamily="Quicksand, sans-serif"
-          fontSize={styles.fontSize}
-          strokeOpacity="null"
-          strokeWidth="0"
-          textAnchor="start"
-          x="0"
-          y={styles.fontSize}
-          xmlSpace="preserve"
-        >
-          M
-        </Text2>
-        <Text
-          id="svg_3"
-          fill="#000000"
-          fillOpacity="null"
-          fontFamily="Quicksand, sans-serif"
-          fontSize={styles.fontSize}
-          stroke="#000"
-          strokeOpacity="null"
-          strokeWidth="0"
-          textAnchor="start"
-          x="0"
-          y={styles.fontSize}
-          xmlSpace="preserve"
-        >
-          M
-        </Text>
-      </svg>
-    )
-
-    if (isLoading) {
-      return (
-        <MainLayout>
-          <MainWrapper>
-            <PositionBox>{mainLogoLoading}</PositionBox>
-          </MainWrapper>
-        </MainLayout>
-      )
-    }
-
-    const welcomeLayout = (
+  if (isLoading) {
+    return (
       <MainLayout>
         <MainWrapper>
-          <Box>
-            <PositionBox>
-              <BoxTitle
-                width={animateTitle ? (isMobile ? 260 : 590) : undefined}
-                isMobile={isMobile}
-              >
-                <span>M</span>
-                {titleA && <TextFade>a</TextFade>}
-                {titleC && <TextFade>c</TextFade>}
-                {titleK && <TextFade>k</TextFade>}
-                {titleI && <TextFade>i</TextFade>}
-                {titleE && <TextFade>e</TextFade>}
-              </BoxTitle>
-            </PositionBox>
-            {subTitle && (
-              <BoxNext onClick={() => this.setState({ isStart: true })}>
-                Click to Continue
-              </BoxNext>
-            )}
-          </Box>
+          <PositionBox>{mainLogoLoading}</PositionBox>
         </MainWrapper>
       </MainLayout>
     )
-
-    const detailsLayout = (
-      <Router basename="/">
-        <Switch>
-          <LandingPage />
-        </Switch>
-      </Router>
-    )
-
-    if (!this.state.isStart) {
-      return <React.Fragment>{welcomeLayout}</React.Fragment>
-    }
-
-    return <React.Fragment>{detailsLayout}</React.Fragment>
   }
+
+  const welcomeLayout = (
+    <MainLayout>
+      <MainWrapper>
+        <Box>
+          <PositionBox>
+            <BoxTitle
+              width={isAnimateTitle ? (isMobile ? 260 : 590) : undefined}
+              isMobile={isMobile}
+            >
+              <span>M</span>
+              {shouldFadeTitle && <TextFade>a</TextFade>}
+              {shouldFadeTitle && <TextFade>c</TextFade>}
+              {shouldFadeTitle && <TextFade>k</TextFade>}
+              {shouldFadeTitle && <TextFade>i</TextFade>}
+              {shouldFadeTitle && <TextFade>e</TextFade>}
+            </BoxTitle>
+          </PositionBox>
+          {shouldShowSubTitle && (
+            <BoxNext onClick={() => setShouldShowDetails(true)}>
+              Click to Continue
+            </BoxNext>
+          )}
+        </Box>
+      </MainWrapper>
+    </MainLayout>
+  )
+
+  const detailsLayout = (
+    <Router basename="/">
+      <Switch>
+        <LandingPage />
+      </Switch>
+    </Router>
+  )
+
+  if (!shouldShowDetails) {
+    return <React.Fragment>{welcomeLayout}</React.Fragment>
+  }
+
+  return <React.Fragment>{detailsLayout}</React.Fragment>
 }
 
 export default App

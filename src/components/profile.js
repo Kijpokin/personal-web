@@ -320,7 +320,7 @@ export const Profile = () => {
           <ProfileSubTitle> Full-stack developer </ProfileSubTitle>
           <ProfileSubDetails>
             Active on learning, Passionate to create best impactful product for
-            users and also hands- on experience in programming
+            users and also hands-on experience in programming
           </ProfileSubDetails>
           <OptionLinkWrapper>
             <OptionLinkItem>
@@ -329,7 +329,7 @@ export const Profile = () => {
                 src={AttachFile}
                 onClick={() =>
                   window.open(
-                    'https://firebasestorage.googleapis.com/v0/b/myportv2.appspot.com/o/Resume.pdf?alt=media&token=9ba1433b-b16c-4721-a35e-633433b7f526'
+                    'https://firebasestorage.googleapis.com/v0/b/myportv2.appspot.com/o/Resume.pdf?alt=media&token=49698a14-6635-4624-8af8-133b6b7569f2'
                   )
                 }
               />
