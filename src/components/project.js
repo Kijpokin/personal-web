@@ -2,6 +2,7 @@ import React from 'react'
 import { Wrapper, Title as profileTitle } from './profile'
 import styled from 'styled-components'
 import SmartWhaleImg from '../assets/1-1.jpg'
+import EasiEatImg from '../assets/1-2.jpg'
 
 const BoxItem = styled.div`
   padding: 1rem 1.5rem 2rem;
@@ -56,10 +57,17 @@ const BoxSubDetails = styled.div`
 export const Project = () => {
   const projects = [
     {
+      src: EasiEatImg,
+      position: 'Easieat',
+      company: 'Senior project',
+      date: 'August 2018 - May 2019',
+      details: `Easieat - Platform restaurant assistant system with website and mobile application, To improve the efficient restaurant service model and create the possible maximum satisfaction for customers. which are the queue management system, food ordering, restaurant management system.`
+    },
+    {
       src: SmartWhaleImg,
       position: 'SmartWhale',
       company: 'Computer Exploration',
-      date: 'Octobor 2015',
+      date: 'October 2015',
       details: `SmartWhale - Mobile Application Project This application is a game application on smart phone in IOS platform and android platfrom by using engine name 'UNITY'. Inside this game it have many mini game for appeal to player with various games.`
     }
   ]
