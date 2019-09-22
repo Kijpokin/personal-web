@@ -1,15 +1,17 @@
 import React from 'react'
+import { Route, withRouter } from 'react-router-dom'
 import styled, { keyframes } from 'styled-components'
+
 import Work from '../assets/outline-work_outline-24px.svg'
 import Assignment from '../assets/outline-assignment-24px.svg'
 import Person from '../assets/outline-person-24px.svg'
 import Star from '../assets/outline-star_border-24px.svg'
+
 import ProfilePage from './profile'
 import Footer from './footer'
 import Experience from './experience'
 import ProjectPage from './project'
 import AcheivementPage from './acheivements'
-import { Route, withRouter } from 'react-router-dom'
 
 export const UnderLineAnimation = keyframes`
   0% {

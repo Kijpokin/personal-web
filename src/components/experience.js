@@ -143,7 +143,7 @@ export const Experience = () => {
     }
   ]
 
-  const getBox = item => (
+  const renderBoxItem = item => (
     <BoxItem>
       <BoxItemHeader>
         {item.position} {item.link && <Link href={item.link}>Link</Link>}
@@ -155,9 +155,9 @@ export const Experience = () => {
     </BoxItem>
   )
 
-  const worksItems = works.map(item => getBox(item))
-  const projectsItems = projects.map(item => getBox(item))
-  const volunteersItems = volunteers.map(item => getBox(item))
+  const worksItems = works.map(item => renderBoxItem(item))
+  const projectsItems = projects.map(item => renderBoxItem(item))
+  const volunteersItems = volunteers.map(item => renderBoxItem(item))
 
   return (
     <Wrapper>

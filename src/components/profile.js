@@ -1,10 +1,11 @@
 import React from 'react'
-import ProfilePic from '../assets/Pic027.jpg'
 import styled from 'styled-components'
+import { keyframes } from 'styled-components'
+
+import ProfilePic from '../assets/Pic027.jpg'
 import Phone from '../assets/outline-phone-24px.svg'
 import Cake from '../assets/outline-cake-24px.svg'
 import Mail from '../assets/outline-mail-24px.svg'
-import { keyframes } from 'styled-components'
 import AttachFile from '../assets/resume.svg'
 import Bitbucket from '../assets/bitbucket-sign.svg'
 import Facebook from '../assets/facebook.svg'
@@ -245,7 +246,7 @@ const OptionLinkItem = styled.div`
 `
 
 export const Profile = () => {
-  const ProgrammingLanguages = [
+  const programmingLanguages = [
     'C/C++',
     'Python',
     'PHP',
@@ -254,7 +255,7 @@ export const Profile = () => {
     'SQL'
   ]
 
-  const WebDevelopments = [
+  const webDevelopments = [
     'HTML5',
     'CSS3',
     'Jquery',
@@ -265,15 +266,15 @@ export const Profile = () => {
     'Firebase Realtime Database'
   ]
 
-  const MobileDevelopments = ['Ionic', 'React Native']
+  const mobileDevelopments = ['Ionic', 'React Native']
 
-  const Languages = [
+  const languages = [
     'Thai (Native)',
     'English (Intermediate)',
     'German (Beginner)'
   ]
 
-  const TimelineData = [
+  const timelineData = [
     {
       date: '2003-2014',
       company: 'Assumption College, Bangkok, Thailand',
@@ -286,21 +287,21 @@ export const Profile = () => {
     }
   ]
 
-  const ProgrammingLanguagesTags = ProgrammingLanguages.map(language => (
+  const ProgrammingLanguagesTags = programmingLanguages.map(language => (
     <SkillsTag>{language}</SkillsTag>
   ))
 
-  const WebDevelopmentsTags = WebDevelopments.map(item => (
+  const WebDevelopmentsTags = webDevelopments.map(item => (
     <SkillsTag>{item}</SkillsTag>
   ))
 
-  const MobileDevelopmentsTags = MobileDevelopments.map(item => (
+  const MobileDevelopmentsTags = mobileDevelopments.map(item => (
     <SkillsTag>{item}</SkillsTag>
   ))
 
-  const LanguagesTags = Languages.map(item => <SkillsTag>{item}</SkillsTag>)
+  const LanguagesTags = languages.map(item => <SkillsTag>{item}</SkillsTag>)
 
-  const Timelines = TimelineData.reverse().map(item => (
+  const Timelines = timelineData.reverse().map(item => (
     <TimelineItem>
       <TimelineItemHeader>{item.date}</TimelineItemHeader>
       <TimelineDetails>
@@ -309,6 +310,9 @@ export const Profile = () => {
       </TimelineDetails>
     </TimelineItem>
   ))
+
+  const RESUME_URL =
+    'https://firebasestorage.googleapis.com/v0/b/myportv2.appspot.com/o/Resume.pdf?alt=media&token=fcb889a7-fa9e-40c0-84b7-4d42fa67ff88'
 
   return (
     <Wrapper>
@@ -319,7 +323,7 @@ export const Profile = () => {
           <ProfileTitle>Kijpokin Ngamsomsakskul </ProfileTitle>
           <ProfileSubTitle> Full-stack developer </ProfileSubTitle>
           <ProfileSubDetails>
-            Active on learning, Passionate to create best impactful product for
+            Active on learning, passionate to create high-quality product for
             users and also hands-on experience in programming
           </ProfileSubDetails>
           <OptionLinkWrapper>
@@ -327,11 +331,7 @@ export const Profile = () => {
               <SubDetailsIcon
                 cursor
                 src={AttachFile}
-                onClick={() =>
-                  window.open(
-                    'https://firebasestorage.googleapis.com/v0/b/myportv2.appspot.com/o/Resume.pdf?alt=media&token=49698a14-6635-4624-8af8-133b6b7569f2'
-                  )
-                }
+                onClick={() => window.open(RESUME_URL)}
               />
             </OptionLinkItem>
             <OptionLinkItem>
