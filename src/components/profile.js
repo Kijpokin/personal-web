@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { keyframes } from 'styled-components'
 
-import ProfilePic from '../assets/Pic027.jpg'
+import ProfilePic from '../assets/profile.jpg'
 import Phone from '../assets/outline-phone-24px.svg'
 import Cake from '../assets/outline-cake-24px.svg'
 import Mail from '../assets/outline-mail-24px.svg'

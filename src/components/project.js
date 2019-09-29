@@ -1,8 +1,9 @@
 import React from 'react'
 import { Wrapper, Title as profileTitle } from './profile'
 import styled from 'styled-components'
-import SmartWhaleImg from '../assets/1-1.jpg'
-import EasiEatImg from '../assets/1-2.jpg'
+import SmartWhaleImg from '../assets/projects/smart-whale.jpg'
+import EasiEatImg from '../assets/projects/easieat.jpg'
+import CssChallengeImg from '../assets/projects/css-challenge.jpg'
 
 const BoxItem = styled.div`
   padding: 1rem 1.5rem 2rem;
@@ -37,6 +38,8 @@ const BoxItemHeader = styled.div`
   margin-bottom: 1.5rem;
   font-size: 125%;
   font-weight: 600;
+  display: flex;
+  justify-content: space-between;
 `
 
 const BoxDetails = styled.div`
@@ -54,8 +57,27 @@ const BoxSubDetails = styled.div`
   font-weight: normal;
 `
 
+const Link = styled.a`
+  font-size: 0.75em;
+  cursor: pointer;
+  color: #666;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+`
+
 export const Project = () => {
   const projects = [
+    {
+      src: CssChallengeImg,
+      position: 'Css Challenge',
+      date: 'Augsut 2019 - Now',
+      details:
+        'Create new things using css (eg. 3d Cube, bouncing ball animation) every weekend for improve css skill, goal to 25 days inspired by 100dayscss.',
+      link: 'https://modest-lichterman-82e8af.netlify.com/'
+    },
     {
       src: EasiEatImg,
       position: 'Easieat',
@@ -76,7 +98,9 @@ export const Project = () => {
     <BoxWrapper>
       <Image src={item.src} />
       <BoxItem>
-        <BoxItemHeader> {item.position} </BoxItemHeader>
+        <BoxItemHeader>
+          {item.position} {item.link && <Link href={item.link} target="blank">Link</Link>}
+        </BoxItemHeader>
         <BoxDetails>
           {item.company} <BoxDetailsDate>{item.date}</BoxDetailsDate>
           <BoxSubDetails> {item.details}</BoxSubDetails>
@@ -89,7 +113,7 @@ export const Project = () => {
 
   return (
     <Wrapper>
-      <Title> Projects </Title>
+      <Title>Projects</Title>
       {projectsItems}
     </Wrapper>
   )

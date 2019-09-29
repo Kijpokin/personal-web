@@ -1,9 +1,9 @@
 import React from 'react'
 import { Wrapper, Title as profileTitle } from './profile'
 import styled from 'styled-components'
-import Img1 from '../assets/1.jpg'
-import Img2 from '../assets/2.jpg'
-import Img3 from '../assets/1strunnerupunesco.jpg'
+import Codehew from '../assets/acheivements/codehew.jpg'
+import Toi from '../assets/acheivements/toi10.jpg'
+import Unesco from '../assets/acheivements/unesco.jpg'
 
 const BoxItem = styled.div`
   padding: 1rem 1.5rem 2rem;
@@ -58,7 +58,7 @@ const BoxSubDetails = styled.div`
 export const Archeivement = () => {
   const archeivement = [
     {
-      src: Img3,
+      src: Unesco,
       position: '1st Runner Up',
       company: 'UNESCO-Microsoft hackathon for a culture of peace',
       date: 'April 2018',
@@ -66,7 +66,7 @@ export const Archeivement = () => {
         'Hackathon participants will create apps using lessons from the innovative teaching and learning materials that have been developed under the programme and that respond to the question: “How can we enjoy a culture of peace and come to understand history as a source of harmony based on shared histories rather than conflict ? ”'
     },
     {
-      src: Img1,
+      src: Codehew,
       position: 'Final Round Programming Contest',
       company: 'CodeHew Hackathon',
       date: 'January 2016',
@@ -74,7 +74,7 @@ export const Archeivement = () => {
         'The winner in activities and 13th rank of Total team, sponsored by Wongnai and Association Programming Thailand'
     },
     {
-      src: Img2,
+      src: Toi,
       position: 'Participate The Tenth Thailand Olympiad in Informatics',
       company: 'Ubonratchathani University',
       date: 'May 2014',
