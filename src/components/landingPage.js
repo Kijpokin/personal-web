@@ -182,7 +182,7 @@ class LandingPage extends React.Component {
             </Sticky>
           </NavBar>
           <Content>
-            <Route exact={true} path="/" component={ProfilePage} />
+            <Route exact path="/" component={ProfilePage} />
             <Route path="/experience" component={Experience} />
             <Route path="/project" component={ProjectPage} />
             <Route path="/achievement" component={AcheivementPage} />

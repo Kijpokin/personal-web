@@ -316,12 +316,12 @@ export const Profile = () => {
 
   return (
     <Wrapper>
-      <Title> About me </Title>
+      <Title>About me</Title>
       <ProfileWrapper>
         <ProfileImageWrapper />
         <ProfileDetails>
           <ProfileTitle>Kijpokin Ngamsomsakskul </ProfileTitle>
-          <ProfileSubTitle> Full-stack developer </ProfileSubTitle>
+          <ProfileSubTitle>Software Developer</ProfileSubTitle>
           <ProfileSubDetails>
             Active on learning, passionate to create high-quality product for
             users and also hands-on experience in programming
