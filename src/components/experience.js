@@ -74,7 +74,7 @@ const Link = styled.a`
 export const Experience = () => {
   const works = [
     {
-      position: 'Full stack Developer',
+      position: 'Full-stack Developer',
       company: '7peakssoftware',
       date: 'November 2019 - Now',
       details: 'Design and build advanced applications using React and Node.js'
@@ -87,7 +87,7 @@ export const Experience = () => {
         'Front-end development and research new things to apply in teams using React, GraphQL'
     },
     {
-      position: 'Full stack Developer Part-time',
+      position: 'Full-stack Developer Part-time',
       company: 'Focal Solutions',
       date: 'January 2019 - May 2019',
       details:
