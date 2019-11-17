@@ -321,7 +321,7 @@ export const Profile = () => {
         <ProfileImageWrapper />
         <ProfileDetails>
           <ProfileTitle>Kijpokin Ngamsomsakskul </ProfileTitle>
-          <ProfileSubTitle>Software Developer</ProfileSubTitle>
+          <ProfileSubTitle>Fullstack Developer</ProfileSubTitle>
           <ProfileSubDetails>
             Active on learning, passionate to create high-quality product for
             users and also hands-on experience in programming
