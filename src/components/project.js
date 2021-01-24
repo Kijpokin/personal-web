@@ -73,9 +73,9 @@ export const Project = () => {
     {
       src: CssChallengeImg,
       position: 'Css Challenge',
-      date: 'Augsut 2019 - Now',
+      date: 'Augsut 2019 - January 2020',
       details:
-        'Create new things using css (eg. 3d Cube, bouncing ball animation) every weekend for improve css skill, goal to 25 days inspired by 100dayscss.',
+        'Create new things using css (eg. 3d Cube, bouncing ball animation) every months',
       link: 'https://modest-lichterman-82e8af.netlify.com/'
     },
     {
