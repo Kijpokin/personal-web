@@ -369,9 +369,6 @@ export const Profile = () => {
           <SubDetailsIcon src={Cake} /> 11 Oct 1996
         </ContactDetails>
         <ContactDetails>
-          <SubDetailsIcon src={Phone} /> 089-797-3566
-        </ContactDetails>
-        <ContactDetails>
           <SubDetailsIcon src={Mail} /> kijpokin.nga@hotmail.com
         </ContactDetails>
       </ContactWrapper>
