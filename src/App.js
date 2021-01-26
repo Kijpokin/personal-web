@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import styled, { keyframes } from 'styled-components'
-import LandingPage from './components/landingPage'
+import LandingPage from './components/LandingPage'
 import { BrowserRouter as Router, Switch } from 'react-router-dom'
 
 export const styles = {

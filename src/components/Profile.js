@@ -263,14 +263,14 @@ export const Profile = () => {
     'MongoDB',
     'Angular 2+',
     'React',
-    'Firebase Realtime Database'
+    'Firebase'
   ]
 
   const mobileDevelopments = ['Ionic', 'React Native']
 
   const languages = [
     'Thai (Native)',
-    'English (Intermediate)',
+    'English (Advanced)',
     'German (Beginner)'
   ]
 

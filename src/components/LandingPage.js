@@ -7,11 +7,11 @@ import Assignment from '../assets/outline-assignment-24px.svg'
 import Person from '../assets/outline-person-24px.svg'
 import Star from '../assets/outline-star_border-24px.svg'
 
-import ProfilePage from './profile'
-import Footer from './footer'
-import Experience from './experience'
-import ProjectPage from './project'
-import AcheivementPage from './acheivements'
+import ProfilePage from './Profile'
+import Footer from './Footer'
+import Experience from './Experience'
+import ProjectPage from './Project'
+import AcheivementPage from './Acheivements'
 
 export const UnderLineAnimation = keyframes`
   0% {
@@ -108,7 +108,7 @@ const Sticky = styled.div`
 
 const NavBar = styled.div`
   background: #fefefe;
-  box-shadow: 0px 1px 5px -1px #111;
+  box-shadow: 0 1px 5px -1px #111;
   position: sticky;
   top: 0;
   z-index: 999;

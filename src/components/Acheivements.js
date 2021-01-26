@@ -1,5 +1,5 @@
 import React from 'react'
-import { Wrapper, Title as profileTitle } from './profile'
+import { Wrapper, Title as profileTitle } from './Profile'
 import styled from 'styled-components'
 import Codehew from '../assets/acheivements/codehew.jpg'
 import Toi from '../assets/acheivements/toi10.jpg'
