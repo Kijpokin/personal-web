@@ -2,17 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd129838-d9de-4e56-8f74-880a5ecfba1d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pages/Intro/Intro.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Intro/Intro.styled.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Intro/components/MainLogo.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Intro/components/MainLogo.styled.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Intro/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/theme.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/acheivements.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Acheivements.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/experience.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Experience.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/landingPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LandingPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/project.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Project.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LandingPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LandingPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Intro/Intro.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Intro/Intro.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,6 +74,9 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\Mackie\Desktop\portv2\node_modules\prettier" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -85,7 +88,7 @@
       <option name="presentableId" value="Default" />
       <updated>1611492324576</updated>
       <workItem from="1611492326517" duration="12807000" />
-      <workItem from="1611672137344" duration="3016000" />
+      <workItem from="1611672137344" duration="6051000" />
     </task>
     <task id="LOCAL-00001" summary="chore: cleanup &amp; add gitignore">
       <created>1611501248716</created>
@@ -101,7 +104,21 @@
       <option name="project" value="LOCAL" />
       <updated>1611508852141</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="chore: upgrade react 17">
+      <created>1611690068990</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1611690068990</updated>
+    </task>
+    <task id="LOCAL-00004" summary="refactor: component naming convention">
+      <created>1611690098664</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1611690098664</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,6 +127,23 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="chore: cleanup &amp; add gitignore" />
     <MESSAGE value="feat: remove phone number contact section" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: remove phone number contact section" />
+    <MESSAGE value="chore: upgrade react 17" />
+    <MESSAGE value="refactor: component naming convention" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: component naming convention" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/pages/Intro/components/MainLogo.jsx</url>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

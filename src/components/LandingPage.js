@@ -1,21 +1,21 @@
 import React from 'react'
-import { Route, withRouter } from 'react-router-dom'
 import styled, { keyframes } from 'styled-components'
 
 import Work from '../assets/outline-work_outline-24px.svg'
 import Assignment from '../assets/outline-assignment-24px.svg'
 import Person from '../assets/outline-person-24px.svg'
 import Star from '../assets/outline-star_border-24px.svg'
-
-import ProfilePage from './Profile'
 import Footer from './Footer'
+import { useHistory, useLocation } from 'react-router'
+import { Route } from 'react-router-dom'
+import ProfilePage from './Profile'
 import Experience from './Experience'
 import ProjectPage from './Project'
 import AcheivementPage from './Acheivements'
 
 export const UnderLineAnimation = keyframes`
   0% {
-    width: 0;  
+    width: 0;
   }
 
   25% {
@@ -32,7 +32,7 @@ export const UnderLineAnimation = keyframes`
 
   100% {
     width: 100%;
-    
+
   }
 `
 
@@ -122,76 +122,71 @@ const IMGICON = styled.img`
   height: 24px;
 `
 
-class LandingPage extends React.Component {
-  handleMenuClick = link => {
-    this.props.history.push(link)
+const LandingPage = () => {
+  const history = useHistory()
+  const location = useLocation()
+
+  const handleMenuClick = (link) => {
+    history.push(link)
   }
 
-  render() {
-    return (
-      <Layout>
-        <HeadBar>
-          <NavBar>
-            <Sticky>
-              <Menu
-                className={this.props.location.pathname === '/' && 'active'}
-                onTouchStart={() => this.handleMenuClick('/')}
-                onClick={() => this.handleMenuClick('/')}
-              >
-                <FAICON>
-                  <IMGICON src={Person} />
-                </FAICON>
-                <TextMenu>Profile</TextMenu>
-              </Menu>
-              <Menu
-                className={
-                  this.props.location.pathname === '/experience' && 'active'
-                }
-                onTouchStart={() => this.handleMenuClick('/experience')}
-                onClick={() => this.handleMenuClick('/experience')}
-              >
-                <FAICON>
-                  <IMGICON src={Work} />
-                </FAICON>
-                <TextMenu>Experience</TextMenu>
-              </Menu>
-              <Menu
-                className={
-                  this.props.location.pathname === '/project' && 'active'
-                }
-                onTouchStart={() => this.handleMenuClick('/project')}
-                onClick={() => this.handleMenuClick('/project')}
-              >
-                <FAICON>
-                  <IMGICON src={Assignment} />
-                </FAICON>
-                <TextMenu>Projects</TextMenu>
-              </Menu>
-              <Menu
-                className={
-                  this.props.location.pathname === '/achievement' && 'active'
-                }
-                onTouchStart={() => this.handleMenuClick('/achievement')}
-                onClick={() => this.handleMenuClick('/achievement')}
-              >
-                <FAICON>
-                  <IMGICON src={Star} />
-                </FAICON>
-                <TextMenu>Achievement</TextMenu>
-              </Menu>
-            </Sticky>
-          </NavBar>
-          <Content>
-            <Route exact path="/" component={ProfilePage} />
-            <Route path="/experience" component={Experience} />
-            <Route path="/project" component={ProjectPage} />
-            <Route path="/achievement" component={AcheivementPage} />
-          </Content>
-          <Footer />
-        </HeadBar>
-      </Layout>
-    )
-  }
+  return (
+    <Layout>
+      <HeadBar>
+        <NavBar>
+          <Sticky>
+            <Menu
+              className={location.pathname === '/' && 'active'}
+              onTouchStart={() => handleMenuClick('/profile')}
+              onClick={() => handleMenuClick('/profile')}
+            >
+              <FAICON>
+                <IMGICON src={Person} />
+              </FAICON>
+              <TextMenu>Profile</TextMenu>
+            </Menu>
+            <Menu
+              className={location.pathname === '/experience' && 'active'}
+              onTouchStart={() => handleMenuClick('/experience')}
+              onClick={() => handleMenuClick('/experience')}
+            >
+              <FAICON>
+                <IMGICON src={Work} />
+              </FAICON>
+              <TextMenu>Experience</TextMenu>
+            </Menu>
+            <Menu
+              className={location.pathname === '/project' && 'active'}
+              onTouchStart={() => handleMenuClick('/project')}
+              onClick={() => handleMenuClick('/project')}
+            >
+              <FAICON>
+                <IMGICON src={Assignment} />
+              </FAICON>
+              <TextMenu>Projects</TextMenu>
+            </Menu>
+            <Menu
+              className={location.pathname === '/achievement' && 'active'}
+              onTouchStart={() => handleMenuClick('/achievement')}
+              onClick={() => handleMenuClick('/achievement')}
+            >
+              <FAICON>
+                <IMGICON src={Star} />
+              </FAICON>
+              <TextMenu>Achievement</TextMenu>
+            </Menu>
+          </Sticky>
+        </NavBar>
+        <Content>
+          <Route path="/profile" component={ProfilePage} />
+          <Route path="/experience" component={Experience} />
+          <Route path="/project" component={ProjectPage} />
+          <Route path="/achievement" component={AcheivementPage} />
+        </Content>
+        <Footer />
+      </HeadBar>
+    </Layout>
+  )
 }
 
-export default withRouter(LandingPage)
+export default LandingPage
