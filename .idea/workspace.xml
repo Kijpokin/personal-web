@@ -2,18 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd129838-d9de-4e56-8f74-880a5ecfba1d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pages/Intro/Intro.styled.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Intro/components/MainLogo.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Intro/components/MainLogo.styled.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Intro/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/theme.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/MainLayout/MainLayout.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/MainLayout/MainLayout.styled.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/MainLayout/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Main/Main.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Main/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LandingPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LandingPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Intro/Intro.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Intro/Intro.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LandingPage.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,6 +85,7 @@
       <updated>1611492324576</updated>
       <workItem from="1611492326517" duration="12807000" />
       <workItem from="1611672137344" duration="6051000" />
+      <workItem from="1611773775561" duration="2177000" />
     </task>
     <task id="LOCAL-00001" summary="chore: cleanup &amp; add gitignore">
       <created>1611501248716</created>
@@ -136,7 +133,6 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/pages/Intro/components/MainLogo.jsx</url>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
