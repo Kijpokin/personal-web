@@ -12,7 +12,7 @@ const Intro = () => {
   const [isAnimateTitle, setIsAnimateTitle] = useState(false)
   const [shouldFadeTitle, setShouldFadeTitle] = useState(false)
   const [shouldShowSubTitle, setShouldShowSubTitle] = useState(false)
-  
+
   const handleContinue = useCallback(() => {
     history.push('/profile')
   }, [history])
@@ -32,9 +32,7 @@ const Intro = () => {
     setTimeout(() => setShouldShowSubTitle(true), loadTime + 4250)
   }, [])
 
-  const mainLogoLoading = (
-    <MainLogo fontSize={styles.fontSize} />
-  )
+  const mainLogoLoading = <MainLogo fontSize={styles.fontSize} />
 
   if (isLoading) {
     return (
@@ -51,23 +49,12 @@ const Intro = () => {
       <MainWrapper>
         <Box>
           <PositionBox>
-            <BoxTitle
-              width={isAnimateTitle ? (isMobile ? 260 : 590) : undefined}
-              isMobile={isMobile}
-            >
+            <BoxTitle width={isAnimateTitle ? (isMobile ? 260 : 590) : undefined} isMobile={isMobile}>
               <span>M</span>
-              {shouldFadeTitle && <TextFade>a</TextFade>}
-              {shouldFadeTitle && <TextFade>c</TextFade>}
-              {shouldFadeTitle && <TextFade>k</TextFade>}
-              {shouldFadeTitle && <TextFade>i</TextFade>}
-              {shouldFadeTitle && <TextFade>e</TextFade>}
+              {shouldFadeTitle && ['a', 'c', 'k', 'i', 'e'].map((item) => <TextFade key={item}>{item}</TextFade>)}
             </BoxTitle>
           </PositionBox>
-          {shouldShowSubTitle && (
-            <BoxContinue onClick={handleContinue}>
-              Click to Continue
-            </BoxContinue>
-          )}
+          {shouldShowSubTitle && <BoxContinue onClick={handleContinue}>Click to Continue</BoxContinue>}
         </Box>
       </MainWrapper>
     </MainLayout>
