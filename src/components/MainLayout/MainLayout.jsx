@@ -24,8 +24,8 @@ const MENUS = [
     imgSrc: AssignmentSvg,
   },
   {
-    name: 'Achievement',
-    path: '/achievement',
+    name: 'Activities',
+    path: '/activities',
     imgSrc: StarSvg,
   },
 ]
@@ -58,6 +58,10 @@ const MainLayout = ({ children }) => {
       </HeadBar>
     </Wrapper>
   )
+}
+
+MainLayout.PropTypes = {
+  children: React.Children.isRequired,
 }
 
 export default MainLayout
