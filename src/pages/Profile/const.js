@@ -1,5 +1,5 @@
 export const PROFILE_CONFIGS = {
-  programmingLanguages: ['C/C++', 'Python', 'PHP', 'Java', 'Javascript', 'SQL'],
+  programmingLanguages: ['C/C++', 'PHP', 'Java', 'Javascript', 'SQL', 'Typescript'],
   webDevelopments: ['HTML5', 'CSS3', 'Jquery', 'MySQL', 'MongoDB', 'Angular 2+', 'React', 'Firebase'],
   mobileDevelopments: ['Ionic', 'React Native'],
   languages: ['Thai (Native)', 'English (Advanced)', 'German (Beginner)'],

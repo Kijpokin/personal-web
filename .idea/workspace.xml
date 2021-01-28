@@ -1,36 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bd129838-d9de-4e56-8f74-880a5ecfba1d" name="Default Changelist" comment="refactor: refactor layout to new components and page file">
-      <change afterPath="$PROJECT_DIR$/src/components/Footer/Footer.styled.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Footer/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Activities/Activities.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Activities/Activities.styled.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Activities/const.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Activities/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Experience/Experience.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Experience/Experience.styled.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Experience/const.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Experience/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Profile/Profile.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Profile/Profile.styled.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Profile/const.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Profile/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Projects/Project.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Projects/Project.styled.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Projects/const.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Projects/index.js" afterDir="false" />
+    <list default="true" id="bd129838-d9de-4e56-8f74-880a5ecfba1d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Acheivements.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Experience.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MainLayout/MainLayout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainLayout/MainLayout.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Project.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Intro/Intro.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Intro/Intro.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Main/Main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Main/Main.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/acheivements/codehew.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/activities/codehew.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/acheivements/toi10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/activities/toi10.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/acheivements/unesco.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/activities/unesco.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Profile/const.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Profile/const.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +89,7 @@
       <workItem from="1611492326517" duration="12807000" />
       <workItem from="1611672137344" duration="6051000" />
       <workItem from="1611773775561" duration="2772000" />
-      <workItem from="1611859453744" duration="2942000" />
+      <workItem from="1611859453744" duration="3527000" />
     </task>
     <task id="LOCAL-00001" summary="chore: cleanup &amp; add gitignore">
       <created>1611501248716</created>
@@ -150,7 +126,63 @@
       <option name="project" value="LOCAL" />
       <updated>1611775999110</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="refactor: refactor footer to new components">
+      <created>1611862470857</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1611862470857</updated>
+    </task>
+    <task id="LOCAL-00007" summary="refactor: refactor main layout component">
+      <created>1611862482021</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1611862482021</updated>
+    </task>
+    <task id="LOCAL-00008" summary="refactor: refactor activites component">
+      <created>1611862493792</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1611862493792</updated>
+    </task>
+    <task id="LOCAL-00009" summary="refactor: refactor experience component">
+      <created>1611862529885</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1611862529885</updated>
+    </task>
+    <task id="LOCAL-00010" summary="refactor: refactor profile component">
+      <created>1611862541333</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1611862541333</updated>
+    </task>
+    <task id="LOCAL-00011" summary="refactor: refactor project component">
+      <created>1611862549930</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1611862549930</updated>
+    </task>
+    <task id="LOCAL-00012" summary="refactor: refactor pages intro, main component">
+      <created>1611862572755</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1611862572755</updated>
+    </task>
+    <task id="LOCAL-00013" summary="refactor: cleanup">
+      <created>1611862581437</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1611862581437</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,7 +194,16 @@
     <MESSAGE value="chore: upgrade react 17" />
     <MESSAGE value="refactor: component naming convention" />
     <MESSAGE value="refactor: refactor layout to new components and page file" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: refactor layout to new components and page file" />
+    <MESSAGE value="refactor: refactor footer component" />
+    <MESSAGE value="refactor: refactor footer to new components" />
+    <MESSAGE value="refactor: refactor main layout component" />
+    <MESSAGE value="refactor: refactor activites component" />
+    <MESSAGE value="refactor: refactor experience component" />
+    <MESSAGE value="refactor: refactor profile component" />
+    <MESSAGE value="refactor: refactor project component" />
+    <MESSAGE value="refactor: refactor pages intro, main component" />
+    <MESSAGE value="refactor: cleanup" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: cleanup" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
