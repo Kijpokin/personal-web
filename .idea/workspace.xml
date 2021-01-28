@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bd129838-d9de-4e56-8f74-880a5ecfba1d" name="Default Changelist" comment="">
+    <list default="true" id="bd129838-d9de-4e56-8f74-880a5ecfba1d" name="Default Changelist" comment="refactor: rename acheivement to activities">
+      <change afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/github-sign.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/acheivements/codehew.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/activities/codehew.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/acheivements/toi10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/activities/toi10.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/acheivements/unesco.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/activities/unesco.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Profile/const.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Profile/const.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Profile/Profile.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +59,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -73,6 +73,10 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Mackie\Desktop\portv2\src\assets" />
+      <recent name="C:\Users\Mackie\Desktop\portv2\public" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Mackie\Desktop\portv2\src\pages" />
       <recent name="C:\Users\Mackie\Desktop\portv2\src\components\MainLayout" />
@@ -89,7 +93,7 @@
       <workItem from="1611492326517" duration="12807000" />
       <workItem from="1611672137344" duration="6051000" />
       <workItem from="1611773775561" duration="2772000" />
-      <workItem from="1611859453744" duration="3527000" />
+      <workItem from="1611859453744" duration="3915000" />
     </task>
     <task id="LOCAL-00001" summary="chore: cleanup &amp; add gitignore">
       <created>1611501248716</created>
@@ -182,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611862581437</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="refactor: rename acheivement to activities">
+      <created>1611863020809</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1611863020809</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,7 +214,8 @@
     <MESSAGE value="refactor: refactor project component" />
     <MESSAGE value="refactor: refactor pages intro, main component" />
     <MESSAGE value="refactor: cleanup" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: cleanup" />
+    <MESSAGE value="refactor: rename acheivement to activities" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: rename acheivement to activities" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -1,7 +1,7 @@
 import React from 'react'
 import Cake from '../../assets/outline-cake-24px.svg'
 import Mail from '../../assets/outline-mail-24px.svg'
-import Bitbucket from '../../assets/bitbucket-sign.svg'
+import Github from '../../assets/github-sign.svg.svg'
 import Facebook from '../../assets/facebook.svg'
 import LinkedIn from '../../assets/linkedin-logo.svg'
 
@@ -58,7 +58,7 @@ const Profile = () => {
         <ProfileImageWrapper />
         <ProfileDetails>
           <ProfileTitle>Kijpokin Ngamsomsakskul </ProfileTitle>
-          <ProfileSubTitle>Full-stack Developer</ProfileSubTitle>
+          <ProfileSubTitle>Software Engineer</ProfileSubTitle>
           <ProfileSubDetails>
             Active on learning, passionate to create high-quality product for users and also hands-on experience in
             programming
@@ -79,7 +79,7 @@ const Profile = () => {
               />
             </OptionLinkItem>
             <OptionLinkItem>
-              <SubDetailsIcon cursor src={Bitbucket} onClick={() => window.open('https://bitbucket.org/MackieZ/')} />
+              <SubDetailsIcon cursor src={Github} onClick={() => window.open('https://github.com/Kijpokin')} />
             </OptionLinkItem>
           </OptionLinkWrapper>
         </ProfileDetails>
