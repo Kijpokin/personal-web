@@ -1,16 +1,26 @@
+import sevenPeaks from '../../assets/seven-peaks.png'
+import elysianNxt from '../../assets/elysiannxt.png'
+
 export const EXPERIENCE_CONFIGS = {
   works: [
     {
+      src: sevenPeaks,
       position: 'Full-stack Developer',
-      company: '7peakssoftware',
-      date: 'November 2019 - Now',
-      details: 'Design and build advanced applications using React and Node.js',
+      company: 'SevenPeaks Software',
+      date: 'November 2019 - Current',
+      details:
+        '- Build advanced applications, work on ship new features, bug-fixes, and improving maintainability using React, Typescript, and Automate testing.<br/>' +
+        '- Mentoring best practices in technical development and growth mindset to junior developers <br/>' +
+        '- Introduce design system, UI components and sharing reusable code directly between projects',
     },
     {
-      position: 'Software Developer',
-      company: 'Empyrean Solutions - APAC',
-      date: 'June 2019 - October 2019',
-      details: 'Front-end development and research new things to apply in teams using React, GraphQL',
+      src: elysianNxt,
+      position: 'Software Engineer',
+      company: ' ElysianNxt',
+      date: 'June 2019 - November 2019',
+      details:
+        '- Front-end development and research, analysis of new technology, tools and apply in development teams using React, GraphQL<br/>' +
+        '- Performance improvement and optimization in a large-scale web-based platform application.',
     },
     {
       position: 'Full-stack Developer Part-time',

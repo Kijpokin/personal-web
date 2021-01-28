@@ -1,6 +1,6 @@
-import Codehew from '../../assets/acheivements/codehew.jpg'
-import Toi from '../../assets/acheivements/toi10.jpg'
-import Unesco from '../../assets/acheivements/unesco.jpg'
+import Codehew from '../../assets/activities/codehew.jpg'
+import Toi from '../../assets/activities/toi10.jpg'
+import Unesco from '../../assets/activities/unesco.jpg'
 
 export const ACTIVITIES_CONFIGS = {
   activities: [

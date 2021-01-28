@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd129838-d9de-4e56-8f74-880a5ecfba1d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/seven-peaks.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Activities/const.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Activities/const.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Experience/Experience.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Experience/Experience.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Experience/Experience.styled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Experience/Experience.styled.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Experience/const.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Experience/const.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +79,7 @@
       <recent name="C:\Users\Mackie\Desktop\portv2\public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Mackie\Desktop\portv2\src\assets" />
       <recent name="C:\Users\Mackie\Desktop\portv2\public" />
       <recent name="C:\Users\Mackie\Desktop\portv2\src\pages" />
       <recent name="C:\Users\Mackie\Desktop\portv2\src\components\MainLayout" />
@@ -90,7 +96,7 @@
       <workItem from="1611492326517" duration="12807000" />
       <workItem from="1611672137344" duration="6051000" />
       <workItem from="1611773775561" duration="2772000" />
-      <workItem from="1611859453744" duration="5213000" />
+      <workItem from="1611859453744" duration="6362000" />
     </task>
     <task id="LOCAL-00001" summary="chore: cleanup &amp; add gitignore">
       <created>1611501248716</created>
@@ -225,7 +231,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611864349152</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="docs: add link Readme file">
+      <created>1611864726414</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1611864726414</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,7 +265,8 @@
     <MESSAGE value="feat: Add public resume se file" />
     <MESSAGE value="fix: correct svg github file" />
     <MESSAGE value="docs: add read me file" />
-    <option name="LAST_COMMIT_MESSAGE" value="docs: add read me file" />
+    <MESSAGE value="docs: add link Readme file" />
+    <option name="LAST_COMMIT_MESSAGE" value="docs: add link Readme file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

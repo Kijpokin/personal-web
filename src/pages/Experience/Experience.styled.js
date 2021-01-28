@@ -100,3 +100,11 @@ export const Link = styled.a`
     text-decoration: underline;
   }
 `
+
+export const ImgLogo = styled.img`
+  height: 100%;
+  width: 100%;
+  margin-bottom: 8px;
+  max-width: 140px;
+  object-fit: cover;
+`

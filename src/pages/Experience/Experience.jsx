@@ -1,11 +1,9 @@
 import React from 'react'
-import styled from 'styled-components'
 
 import {
   WorksWrapper,
   ProjectsWrapper,
   Wrapper,
-  ProfileTitle,
   BoxItem,
   BoxItemHeader,
   BoxDetails,
@@ -14,17 +12,19 @@ import {
   Title,
   ProjectTitle,
   Link,
+  ImgLogo,
 } from './Experience.styled'
 import { EXPERIENCE_CONFIGS } from './const'
 
-const renderBoxItem = ({ position, link, company, details, date }) => (
+const renderBoxItem = ({ src, position, link, company, details, date }) => (
   <BoxItem key={date}>
     <BoxItemHeader>
       {position} {link && <Link href={link}>Link</Link>}
     </BoxItemHeader>
+    {src && <ImgLogo src={src} />}
     <BoxDetails>
       {company} <BoxDetailsDate>{date}</BoxDetailsDate>
-      <BoxSubDetails> {details}</BoxSubDetails>
+      <BoxSubDetails dangerouslySetInnerHTML={{ __html: details }} />
     </BoxDetails>
   </BoxItem>
 )
