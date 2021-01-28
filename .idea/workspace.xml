@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd129838-d9de-4e56-8f74-880a5ecfba1d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/Resume-SE.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Profile/Profile.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +90,7 @@
       <workItem from="1611492326517" duration="12807000" />
       <workItem from="1611672137344" duration="6051000" />
       <workItem from="1611773775561" duration="2772000" />
-      <workItem from="1611859453744" duration="4581000" />
+      <workItem from="1611859453744" duration="4607000" />
     </task>
     <task id="LOCAL-00001" summary="chore: cleanup &amp; add gitignore">
       <created>1611501248716</created>
@@ -204,7 +204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611863562219</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="feat: Add public resume se file">
+      <created>1611864075559</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1611864075559</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,7 +235,8 @@
     <MESSAGE value="refactor: rename acheivement to activities" />
     <MESSAGE value="refactor: Add github links" />
     <MESSAGE value="feat: Add public resume file" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Add public resume file" />
+    <MESSAGE value="feat: Add public resume se file" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Add public resume se file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

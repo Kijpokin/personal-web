@@ -1,7 +1,7 @@
 import React from 'react'
 import Cake from '../../assets/outline-cake-24px.svg'
 import Mail from '../../assets/outline-mail-24px.svg'
-import Github from '../../assets/github-sign.svg.svg'
+import Github from '../../assets/github-sign.svg'
 import Facebook from '../../assets/facebook.svg'
 import LinkedIn from '../../assets/linkedin-logo.svg'
 
