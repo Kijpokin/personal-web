@@ -1,15 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bd129838-d9de-4e56-8f74-880a5ecfba1d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/MainLayout/MainLayout.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MainLayout/MainLayout.styled.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MainLayout/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Main/Main.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Main/index.js" afterDir="false" />
+    <list default="true" id="bd129838-d9de-4e56-8f74-880a5ecfba1d" name="Default Changelist" comment="refactor: refactor layout to new components and page file">
+      <change afterPath="$PROJECT_DIR$/src/components/Footer/Footer.styled.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Footer/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Activities/Activities.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Activities/Activities.styled.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Activities/const.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Activities/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Experience/Experience.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Experience/Experience.styled.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Experience/const.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Experience/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Profile/Profile.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Profile/Profile.styled.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Profile/const.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Profile/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Projects/Project.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Projects/Project.styled.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Projects/const.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Projects/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LandingPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Acheivements.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Experience.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MainLayout/MainLayout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainLayout/MainLayout.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Project.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Intro/Intro.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Intro/Intro.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Main/Main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Main/Main.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +96,12 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Mackie\Desktop\portv2\src\pages" />
+      <recent name="C:\Users\Mackie\Desktop\portv2\src\components\MainLayout" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -85,7 +112,8 @@
       <updated>1611492324576</updated>
       <workItem from="1611492326517" duration="12807000" />
       <workItem from="1611672137344" duration="6051000" />
-      <workItem from="1611773775561" duration="2177000" />
+      <workItem from="1611773775561" duration="2772000" />
+      <workItem from="1611859453744" duration="2942000" />
     </task>
     <task id="LOCAL-00001" summary="chore: cleanup &amp; add gitignore">
       <created>1611501248716</created>
@@ -115,7 +143,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611690098664</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="refactor: refactor layout to new components and page file">
+      <created>1611775999109</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1611775999110</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,7 +161,8 @@
     <MESSAGE value="feat: remove phone number contact section" />
     <MESSAGE value="chore: upgrade react 17" />
     <MESSAGE value="refactor: component naming convention" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: component naming convention" />
+    <MESSAGE value="refactor: refactor layout to new components and page file" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: refactor layout to new components and page file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
