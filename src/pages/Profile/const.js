@@ -1,8 +1,8 @@
 export const PROFILE_CONFIGS = {
   programmingLanguages: ['C/C++', 'PHP', 'Java', 'Javascript', 'SQL', 'Typescript'],
-  webDevelopments: ['HTML5', 'CSS3', 'Jquery', 'MySQL', 'MongoDB', 'Angular 2+', 'React', 'Firebase'],
+  webDevelopments: ['HTML5', 'CSS3', 'Jquery', 'MySQL', 'MongoDB', 'Angular 2+', 'React', 'Node', 'NextJs', 'Firebase'],
   mobileDevelopments: ['Ionic', 'React Native'],
-  languages: ['Thai (Native)', 'English (Advanced)', 'German (Beginner)'],
+  languages: ['Thai (Native)', 'English (Advanced)'],
   educations: [
     {
       date: '2003-2014',

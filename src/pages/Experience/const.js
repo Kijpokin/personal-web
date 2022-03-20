@@ -4,10 +4,22 @@ import elysianNxt from '../../assets/elysiannxt.png'
 export const EXPERIENCE_CONFIGS = {
   works: [
     {
+      position: 'Software engineer',
+      company: 'LINE company (Thailand)',
+      date: 'May 2021 - Current',
+      details:
+        `- Responsible for LINE Melody service, develop and maintaining advanced features
+        in consumer product and content mangement system tools using React, Typescript, Vue and NodeJs<br/>
+        - Performance improvement and optimization in a large-scale user web-based
+        platform application.<br/>
+        - Leading the technical improvements in development to improve code quality and
+        providing the guideline for best practices to the team.`
+    },
+    {
       src: sevenPeaks,
       position: 'Full-stack Developer',
       company: 'SevenPeaks Software',
-      date: 'November 2019 - Current',
+      date: 'November 2019 - April 2021',
       details:
         '- Build advanced applications, work on ship new features, bug-fixes, and improving maintainability using React, Typescript, and Automate testing.<br/>' +
         '- Mentoring best practices in technical development and growth mindset to junior developers <br/>' +

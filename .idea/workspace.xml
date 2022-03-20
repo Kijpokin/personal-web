@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bd129838-d9de-4e56-8f74-880a5ecfba1d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pages/Resume/Resume.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Resume/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/Resume-FE.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/Resume-FE.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/Resume-SE.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/Resume-SE.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Main/Main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Main/Main.jsx" afterDir="false" />
-    </list>
+    <list default="true" id="bd129838-d9de-4e56-8f74-880a5ecfba1d" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -97,6 +90,7 @@
       <workItem from="1611672137344" duration="6051000" />
       <workItem from="1611773775561" duration="2772000" />
       <workItem from="1611859453744" duration="7163000" />
+      <workItem from="1612016567376" duration="675000" />
     </task>
     <task id="LOCAL-00001" summary="chore: cleanup &amp; add gitignore">
       <created>1611501248716</created>

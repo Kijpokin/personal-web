@@ -6,7 +6,6 @@ import Experience from '../Experience'
 import Profile from '../Profile'
 import Projects from '../Projects'
 import Activities from '../Activities'
-import Resume from '../Resume'
 
 const Main = () => {
   return (
@@ -15,7 +14,6 @@ const Main = () => {
       <Route path="/experience" component={Experience} />
       <Route path="/project" component={Projects} />
       <Route path="/activities" component={Activities} />
-      <Route path="/resume" component={Resume} />
     </MainLayout>
   )
 }
